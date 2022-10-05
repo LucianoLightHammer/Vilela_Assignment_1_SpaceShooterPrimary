@@ -17,8 +17,19 @@ public class BombSpiral : MonoBehaviour
     /// </summary>
     /// <returns>An array of the spawned bombs</returns>
     public GameObject[] SpawnBombSpiral()
+    
     {
-        return null;
+        //create array statement
+        GameObject[] bombsArray = new GameObject[BombCount];
+        
+        for (int i = 0; i < BombCount; i++)
+
+        {
+            float radius = Quaternion.Lerp(StartRadius, EndRadius, Time / duration);
+            Time += Time.deltaTime;
+            yield retun null;
+        }
+        transform.rotation = endValue;
     }
 
 
