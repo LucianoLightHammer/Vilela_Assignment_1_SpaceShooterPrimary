@@ -14,6 +14,8 @@ public class PositionPrefabRelative : MonoBehaviour
     /// <returns>the newly spawned object int he right position.</returns>
     public GameObject PositionPrefabAtRelativePosition()
     {
+        SpawnOffset = transform.position + new Vector3(5.0f, 0.0f);
+        Instantiate(Prefab, SpawnOffset, Quaternion.identity);
         return null;
     }
     
